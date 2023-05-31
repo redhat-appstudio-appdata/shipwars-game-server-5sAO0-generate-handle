@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: shipwars-move-server-fhia
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-move-server-fhia@sha256:10ffc2c5ada4a82c5cf6a7ca3d9d115f796226da0a8f0eab95629fd0bf2513fd
+        name: container-image
+        resources: {}
+status: {}
