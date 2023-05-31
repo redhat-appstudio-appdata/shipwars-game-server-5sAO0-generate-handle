@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: shipwars-bots-ulxq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-bots-ulxq@sha256:644205600a5743ca49a934e656f7b6d99e3f2e001207b64c79080ee2f498d375
+        name: container-image
+        resources: {}
+status: {}
