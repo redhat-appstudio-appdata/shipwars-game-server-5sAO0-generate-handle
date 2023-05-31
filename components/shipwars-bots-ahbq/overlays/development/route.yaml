@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: shipwars-bots-ahbq
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: shipwars-bots-ahbq
+    app.kubernetes.io/part-of: shipwars-game-server
+  name: shipwars-bots-ahbq
+spec:
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: shipwars-bots-ahbq
+    weight: null
+status: {}
