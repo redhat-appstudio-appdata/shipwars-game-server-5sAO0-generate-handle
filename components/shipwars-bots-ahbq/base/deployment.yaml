@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: shipwars-bots-ahbq
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: shipwars-bots-ahbq
+    app.kubernetes.io/part-of: shipwars-game-server
+  name: shipwars-bots-ahbq
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: nodejs-app
+      app.kubernetes.io/instance: shipwars-bots-ahbq
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nodejs-app
+        app.kubernetes.io/instance: shipwars-bots-ahbq
+    spec:
+      containers:
+      - env:
+        - name: AI_SERVER_URL
+          value: http://foo.bar/todo
+        image: nodejs-image:latest
+        name: my-nodejs
+        ports:
+        - containerPort: 3001
+          name: http
+          protocol: TCP
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi
+status: {}
