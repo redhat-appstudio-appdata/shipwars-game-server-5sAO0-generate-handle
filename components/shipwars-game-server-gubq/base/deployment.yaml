@@ -28,7 +28,7 @@ spec:
           value: stonesoup
         - name: AI_AGENT_SERVER_URL
           value: https://shipwars-bots-ulxq-eshortis-tenant.apps.stone-prd-m01.84db.p1.openshiftapps.com/
-        image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-game-server-gubq@sha256:ab2a63db5f889e60d6735f33d9aff7ee19b20aa08e026282a4e1de186be5f87d
+        image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-game-server-gubq@sha256:43edfae0b5d0fb1a732a81dd509ad543c68b5ed468c65720ea83493fc8b55781
         imagePullPolicy: Always
         name: container-image
         ports:
