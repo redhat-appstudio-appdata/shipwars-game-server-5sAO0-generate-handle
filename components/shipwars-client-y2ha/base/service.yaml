@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: shipwars-client-y2ha
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: shipwars-client-y2ha
+    app.kubernetes.io/part-of: shipwars-game-server
+  name: shipwars-client-y2ha
+spec:
+  ports:
+  - port: 8484
+    targetPort: 8484
+  selector:
+    app.kubernetes.io/instance: shipwars-client-y2ha
+status:
+  loadBalancer: {}
