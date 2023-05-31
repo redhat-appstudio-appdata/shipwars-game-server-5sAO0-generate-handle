@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: shipwars-bots-ulxq
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: shipwars-bots-ulxq
+    app.kubernetes.io/part-of: shipwars-game-server
+  name: shipwars-bots-ulxq
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: shipwars-bots-ulxq
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: shipwars-bots-ulxq
+    spec:
+      containers:
+      - env:
+        - name: AI_SERVER_URL
+          value: http://todo.replace.me
+        image: image
+        imagePullPolicy: Always
+        name: container-image
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+status: {}
