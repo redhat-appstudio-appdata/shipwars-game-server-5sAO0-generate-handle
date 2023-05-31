@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: shipwars-client-y2ha
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-client-y2ha@sha256:c335d5011848131225479ecd077b3b072a14457f6cba4c129c36b7768b7f5800
+        name: container-image
+        resources: {}
+status: {}
