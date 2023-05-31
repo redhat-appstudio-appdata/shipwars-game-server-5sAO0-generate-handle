@@ -10,6 +10,7 @@ metadata:
     app.kubernetes.io/part-of: shipwars-game-server
   name: shipwars-game-server-gubq
 spec:
+  replicas: 1
   revisionHistoryLimit: 0
   selector:
     matchLabels:
