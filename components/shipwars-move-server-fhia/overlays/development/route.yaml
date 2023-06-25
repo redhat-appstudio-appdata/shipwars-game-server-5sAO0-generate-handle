@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: shipwars-move-server-fhia
     app.kubernetes.io/part-of: shipwars-game-server
-  name: shipwars-move-server-fhiaosvt
+  name: shipwars-move-server-fhiay6gr
 spec:
   port:
     targetPort: 8080
