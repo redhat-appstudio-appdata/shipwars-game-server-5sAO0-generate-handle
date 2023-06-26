@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: shipwars-client-y2ha
     app.kubernetes.io/part-of: shipwars-game-server
-  name: shipwars-client-y2hap2lj
+  name: shipwars-client-y2hak0bf
 spec:
   port:
     targetPort: 8484
