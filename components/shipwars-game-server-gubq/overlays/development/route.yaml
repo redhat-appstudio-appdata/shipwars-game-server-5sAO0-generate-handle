@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: shipwars-game-server-gubq
     app.kubernetes.io/part-of: shipwars-game-server
-  name: shipwars-game-server-gubq6zhz
+  name: shipwars-game-server-gubq7d8h
 spec:
   port:
     targetPort: 8080
