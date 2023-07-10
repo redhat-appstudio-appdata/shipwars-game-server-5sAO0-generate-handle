@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: shipwars-bots-ulxq
     app.kubernetes.io/part-of: shipwars-game-server
-  name: shipwars-bots-ulxqaull
+  name: shipwars-bots-ulxqurhc
 spec:
   port:
     targetPort: 8080
