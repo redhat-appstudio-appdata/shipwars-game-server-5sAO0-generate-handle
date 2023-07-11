@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: shipwars-move-server-fhia
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
