@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-bots-ulxq@sha256:98d1be2a2f5dd6a9e16105fbd38005b1a0bb2e3180ff0ff1f0da27973780d002
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-bots-ulxq@sha256:644205600a5743ca49a934e656f7b6d99e3f2e001207b64c79080ee2f498d375
         name: container-image
         resources: {}
 status: {}
