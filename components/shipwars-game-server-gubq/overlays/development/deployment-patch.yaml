@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-game-server-gubq@sha256:ab2a63db5f889e60d6735f33d9aff7ee19b20aa08e026282a4e1de186be5f87d
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-game-server-gubq@sha256:c0fa573b9a42c15cd0884e8d0f600c087d503d93092e82feecbc15ac89d57df8
         name: container-image
         resources: {}
 status: {}
