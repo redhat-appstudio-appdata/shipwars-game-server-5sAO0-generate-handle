@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: shipwars-client-y2ha
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-client-y2ha@sha256:e58dd028039330997c81c910386bd3717af9654584f739327764956e4e5d4640
         imagePullPolicy: Always
         name: container-image
         ports:
