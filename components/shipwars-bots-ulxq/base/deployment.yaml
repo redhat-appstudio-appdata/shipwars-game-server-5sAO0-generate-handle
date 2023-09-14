@@ -26,7 +26,7 @@ spec:
       - env:
         - name: AI_SERVER_URL
           value: https://shipwars-move-server-fhia-eshortis-tenant.apps.stone-prd-m01.84db.p1.openshiftapps.com/
-        image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-bots-ulxq@sha256:bfae00ceb5c2e0df7ac59cd3797e31e0246dd684e6964705a73c7c8be20750e5
+        image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-bots-ulxq@sha256:98d1be2a2f5dd6a9e16105fbd38005b1a0bb2e3180ff0ff1f0da27973780d002
         imagePullPolicy: Always
         name: container-image
         ports:
