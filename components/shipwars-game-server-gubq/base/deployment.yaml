@@ -30,7 +30,7 @@ spec:
           value: https://shipwars-bots-ulxq-eshortis-tenant.apps.stone-prd-m01.84db.p1.openshiftapps.com/
         - name: AI_AGENT_WSS_URL
           value: wss://shipwars-game-server-gubq-eshortis-tenant.apps.stone-prd-m01.84db.p1.openshiftapps.com/shipwars/game
-        image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-game-server-gubq@sha256:c0fa573b9a42c15cd0884e8d0f600c087d503d93092e82feecbc15ac89d57df8
+        image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-game-server-gubq@sha256:11d0fead09932b6ff2986486250c045c0f05309302226db48618bd846aebe144
         imagePullPolicy: Always
         name: container-image
         ports:
