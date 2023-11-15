@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: shipwars-move-server-fhia
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-move-server-fhia@sha256:10ffc2c5ada4a82c5cf6a7ca3d9d115f796226da0a8f0eab95629fd0bf2513fd
+      - image: quay.io/redhat-user-workloads/eshortis-tenant/shipwars-game-server/shipwars-move-server-fhia@sha256:a68ca85988c90e57cfc86a64685cd003702cd182782c7c2e699f59da02585607
         imagePullPolicy: Always
         name: container-image
         ports:
